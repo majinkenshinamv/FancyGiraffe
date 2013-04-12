@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Template &middot; Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <style type="text/css">
+            body {
+              padding-top: 20px;
+              padding-bottom: 60px;
+            }
+            
+            /* Custom container */
+            .container {
+              margin: 0 auto;
+              max-width: 1000px;
+            }
+            .container > hr {
+              margin: 60px 0;
+            }
+            
+            /* Main marketing message and sign up button */
+            .jumbotron {
+              margin: 80px 0;
+              text-align: center;
+            }
+            .jumbotron h1 {
+              font-size: 50px;
+              line-height: 1;
+            }
+            .jumbotron .lead {
+              font-size: 24px;
+              line-height: 1.25;
+            }
+            .jumbotron .btn {
+              font-size: 21px;
+              padding: 14px 24px;
+            }
+            
+            /* Supporting marketing content */
+            .marketing {
+              margin: 60px 0;
+            }
+            .marketing p + h4 {
+              margin-top: 28px;
+            }
+            
+            
+            /* Customize the navbar links to be fill the entire space of the .navbar */
+            .navbar .navbar-inner {
+              padding: 0;
+            }
+            .navbar .nav {
+              margin: 0;
+              display: table;
+              width: 100%;
+            }
+            .navbar .nav li {
+              display: table-cell;
+              width: 1%;
+              float: none;
+            }
+            .navbar .nav li a {
+              font-weight: bold;
+              text-align: center;
+              border-left: 1px solid rgba(255,255,255,.75);
+              border-right: 1px solid rgba(0,0,0,.1);
+            }
+            .navbar .nav li:first-child a {
+              border-left: 0;
+              border-radius: 3px 0 0 3px;
+            }
+            .navbar .nav li:last-child a {
+              border-right: 0;
+              border-radius: 0 3px 3px 0;
+            }
+        </style>
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+                    <!--[if lt IE 9]>
+                                                                                                                  <script src="../assets/js/html5shiv.js"></script>
+                                                                                                                <![endif]-->
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="masthead">
+                <h3 class="muted">Asset Management Tool</h3>
+
+                <!-- navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <ul class="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="assets.html">Assets</a></li>
+                                <li class="active"><a href="locations.html">Locations</a></li>
+                                <li><a href="index.jsp">Relocate</a></li>
+                                <li><a href="reports.html">Reports</a></li>
+                                <li><a href="help.html">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- /.navbar -->
+            </div>
+
+            <div class="container" style="margin-top: 30px; padding: 20px;">
+                <h3>Manage Locations</h3>
+                <div class="tabbable">
+                    <!-- Tab Headings-->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Add</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Edit</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Delete</a></li>
+                    </ul> <!-- /Tab Headings-->
+                    <!-- Tab Contents-->
+                    <div class="tab-content">
+
+                        <!-- Tab1 -->
+                        <div class="tab-pane active" id="tab1">
+                            <form class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" for="location">Location</label>
+                                    <div class="controls">
+                                        <input type="text" id="location">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="address">Address</label>
+                                    <div class="controls">
+                                        <input type="text" id="address">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="city">City</label>
+                                    <div class="controls">
+                                        <input type="text" id="city">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="state">State</label>
+                                    <div class="controls">
+                                        <input class="input-mini" type="text" id="state" placeholder="UT">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="zip">Zip</label>
+                                    <div class="controls">
+                                        <input class="input-mini" type="text" id="zip">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="phone">Phone</label>
+                                    <div class="controls">
+                                        <input class="input-medium" type="text" id="phone">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button type="submit" class="btn btn-success">Add Location</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Tab 2-->
+                        <div class="tab-pane" id="tab2">
+                            <form class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" for="location">Location</label>
+                                    <div class="controls">
+                                        <select>
+                                            <option>Office</option>
+                                            <option>Warehouse</option>
+                                            <option>Main St</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                            <br />
+                            <form class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" for="address">Address</label>
+                                    <div class="controls">
+                                        <input type="text" id="address">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="city">City</label>
+                                    <div class="controls">
+                                        <input type="text" id="city">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="state">State</label>
+                                    <div class="controls">
+                                        <input class="input-mini" type="text" id="state" placeholder="UT">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="zip">Zip</label>
+                                    <div class="controls">
+                                        <input class="input-mini" type="text" id="zip">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="phone">Phone</label>
+                                    <div class="controls">
+                                        <input class="input-medium" type="text" id="phone">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button type="submit" class="btn btn-success">Edit Location</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                           <form class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" for="location">Location</label>
+                                    <div class="controls">
+                                        <select>
+                                            <option>Office</option>
+                                            <option>Warehouse</option>
+                                            <option>Main St</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                            <br />
+                            <form class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" for="address">Address</label>
+                                    <div class="controls">
+                                         <span class="input uneditable-input">3927 S. 200 W.</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="city">City</label>
+                                    <div class="controls">
+                                         <span class="input uneditable-input">Ogden</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="state">State</label>
+                                    <div class="controls">
+                                         <span class="input-mini uneditable-input">UT</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="zip">Zip</label>
+                                    <div class="controls">
+                                         <span class="input-mini uneditable-input">81234</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="phone">Phone</label>
+                                    <div class="controls">
+                                         <span class="input-medium uneditable-input">8011234567</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button type="submit" class="btn btn-danger">Delete Location</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> <!-- /Tab Contents-->
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer">
+                <p>&copy; Company 2013</p>
+            </div>
+
+        </div> <!-- /container -->
+        <!-- Le javascript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-dropdown.js"></script>
+
+    </body>
+</html>
